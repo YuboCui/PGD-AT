@@ -33,9 +33,11 @@ Performance of the adversarially trained network against different adversaries f
 
 `weights/`: 用于保存模型权重文件，这里提供了`cifar10.pth`（正常训练，准确率*90.86%*，原作者达到了95.2%）和`cifar10_adv.pth`（对抗训练）两种
 
-`cnn_mnist.py`: 用于CIFAR-10分类的ResNet模型定义。原作者使用了`tf.image.per_image_standardization`处理图像，而我们采用了`torchvision.transforms.v2.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010))`。我们也在代码中实现了`PerImageStandardization`类，但并没有在训练和测试中使用。
+`resnet_cifar10.py`: 用于CIFAR-10分类的ResNet模型定义。原作者使用了`tf.image.per_image_standardization`处理图像，而我们采用了`torchvision.transforms.v2.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010))`。我们也在代码中实现了`PerImageStandardization`类，但并没有在训练和测试中使用。
 
-`train.py`: 训练正常的CIFAR-10分类模型/使用PGD对抗训练得到鲁棒模型
+`train.py`: 训练正常的CIFAR-10分类模型
+
+`train_adv.py`:使用PGD对抗训练得到鲁棒模型
 
 `eval.py`: 验证模型在原始测试集/FGSM攻击/PGD攻击下的准确率
 
