@@ -1,6 +1,6 @@
 # PGD-AT（PGD对抗训练）
 
-[ICLR 2018]([Towards Deep Learning Models Resistant to Adversarial Attacks | OpenReview](https://openreview.net/forum?id=rJzIBfZAb))论文“[Towards Deep Learning Models Resistant to Adversarial Attacks]([[1706.06083\] Towards Deep Learning Models Resistant to Adversarial Attacks](https://arxiv.org/abs/1706.06083))”的简洁PyTorch实现，在MNIST和CIFAR-10数据集上通过PGD攻击方法进行对抗训练。原作者的代码（[MNIST]([MadryLab/mnist_challenge: A challenge to explore adversarial robustness of neural networks on MNIST.](https://github.com/MadryLab/mnist_challenge))和[CIFAR-10]([MadryLab/cifar10_challenge: A challenge to explore adversarial robustness of neural networks on CIFAR10.](https://github.com/MadryLab/cifar10_challenge))）基于Tensorflow实现，我们使用PyTorch框架，基本还原了原论文代码中不同分类器的网络结构、训练方法等。同时，我们主要关心对抗训练过程，调用了[torchattacks]([Harry24k/adversarial-attacks-pytorch: PyTorch implementation of adversarial attacks [torchattacks\]](https://github.com/Harry24k/adversarial-attacks-pytorch))库中的PGD对抗攻击实现。
+[ICLR 2018](https://openreview.net/forum?id=rJzIBfZAb)论文“[Towards Deep Learning Models Resistant to Adversarial Attacks](https://arxiv.org/abs/1706.06083)”的简洁PyTorch实现，在MNIST和CIFAR-10数据集上通过PGD攻击方法进行对抗训练。原作者的代码（[MNIST](https://github.com/MadryLab/mnist_challenge)和[CIFAR-10](https://github.com/MadryLab/cifar10_challenge)）基于Tensorflow实现，我们使用PyTorch框架，基本还原了原论文代码中不同分类器的网络结构、训练方法等。同时，我们主要关心对抗训练过程，调用了[torchattacks](https://github.com/Harry24k/adversarial-attacks-pytorch)库中的PGD对抗攻击实现。
 
 代码包括两个文件夹，MNIST和CIFAR10。可进入对应文件夹内执行`.py`文件，复现效果见下方表格。
 
