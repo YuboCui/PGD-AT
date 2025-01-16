@@ -52,4 +52,4 @@ Performance of the adversarially trained network against different adversaries f
 | PGD (7 steps)  | **52.89%**      | 50.0%                   |
 | PGD (20 steps) | **50.37%**      | 45.8%                   |
 
-Our model has good robustness against adversarial samples. However, whether it is normal training or adversarial training, the accuracy of our model on the original test set is always low, which is an unresolved problem.
+Our model has good robustness against adversarial examples. However, whether it is normal training or adversarial training, the accuracy of our model on the original test set is always low, which is an unresolved problem.
