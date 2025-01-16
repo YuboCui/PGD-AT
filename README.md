@@ -12,7 +12,7 @@ The code includes two folders, MNIST and CIFAR10. You can enter the correspondin
 
 `weights/`: To save the model weights file, two options are provided: `mnist.pth` (normal training, accuracy 99.24%) and `mnist_adv.pth` (adversarial training)
 
-`zxzx.py`: CNN model for MNIST classification
+`resnet_cifar10.py`: CNN model for MNIST classification
 
 `train.py`: Train a normal MNIST classification model / Use PGD adversarial training to obtain a robust model
 
