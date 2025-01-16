@@ -1,2 +1,0 @@
-CIFAR10/weights/cifar10.pth filter=lfs diff=lfs merge=lfs -text
-CIFAR10/weights/cifar10_adv.pth filter=lfs diff=lfs merge=lfs -text
