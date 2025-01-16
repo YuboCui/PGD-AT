@@ -12,7 +12,7 @@ The code includes two folders, MNIST and CIFAR10. You can enter the correspondin
 
 `weights/`: To save the model weights file, two options are provided: `mnist.pth` (normal training, accuracy 99.24%) and `mnist_adv.pth` (adversarial training)
 
-`resnet_cifar10.py`: CNN model for MNIST classification
+`cnn_mnist.py`: CNN model for MNIST classification
 
 `train.py`: Train a normal MNIST classification model / Use PGD adversarial training to obtain a robust model
 
@@ -35,7 +35,7 @@ Directly using PGD attack with step=40, ε=0.3 for adversarial training may resu
 
 `weights/`: To save the model weights file, two options are provided: `cifar10.pth` (normal training, accuracy _90.86%_ but 95.2% in paper) and `cifar10_adv.pth` (adversarial training)
 
-`cnn_mnist.py`: ResNet model for CIFAR-10 classification. The original code used `tf.image.per_image_standardization` to process images, while we use `torchvision.transforms.v2.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010))`. We also implement a `PerImageStandardization` class, but not use it during the train/eval process.
+`resnet_cifar10.py`: ResNet model for CIFAR-10 classification. The original code used `tf.image.per_image_standardization` to process images, while we use `torchvision.transforms.v2.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010))`. We also implement a `PerImageStandardization` class, but not use it during the train/eval process.
 
 `train.py`: Train a normal CIFAR-10 classification model
 
