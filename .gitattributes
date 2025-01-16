@@ -1,2 +1,0 @@
-cifar10.pth filter=lfs diff=lfs merge=lfs -text
-cifar10_adv.pth filter=lfs diff=lfs merge=lfs -text
