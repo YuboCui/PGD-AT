@@ -16,7 +16,7 @@ The code includes two folders, MNIST and CIFAR10. You can enter the correspondin
 
 `train.py`: Train a normal MNIST classification model / Use PGD adversarial training to obtain a robust model
 
-`eval.py`: Evalute the accuracy of the model under the original test set or against FGSM/PGD attack
+`eval.py`: Evaluate the accuracy of the model on the original test set or against FGSM/PGD attack
 
 Performance of the adversarially trained network against different adversaries for ε=0.3
 
@@ -41,7 +41,7 @@ Directly using PGD attack with step=40, ε=0.3 for adversarial training may resu
 
 `train_adv.py`: Use PGD adversarial training to obtain a robust model
 
-`eval.py`: Evalute the accuracy of the model under the original test set or against FGSM/PGD attack
+`eval.py`: Evaluate the accuracy of the model on the original test set or against FGSM/PGD attack
 
 Performance of the adversarially trained network against different adversaries for ε=8
 
