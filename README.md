@@ -37,7 +37,9 @@ Directly using PGD attack with step=40, ε=0.3 for adversarial training may resu
 
 `cnn_mnist.py`: ResNet model for CIFAR-10 classification. The original code used `tf.image.per_image_standardization` to process images, while we use `torchvision.transforms.v2.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010))`. We also implement a `PerImageStandardization` class, but not use it during the train/eval process.
 
-`train.py`: Train a normal CIFAR-10 classification model / Use PGD adversarial training to obtain a robust model
+`train.py`: Train a normal CIFAR-10 classification model
+
+`train_adv.py`: Use PGD adversarial training to obtain a robust model
 
 `eval.py`: Evalute the accuracy of the model under the original test set or against FGSM/PGD attack
 
